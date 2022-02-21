@@ -1,0 +1,631 @@
+@font-face {
+  font-family: "AvenirLTStd-Roman";
+  src: url("../fonts/AvenirLTStd-Roman.otf") format("opentype");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../fonts/SFProDisplay-Bold.ttf") format("truetype");
+}
+
+body {
+  max-width: 100%;
+  margin: 0;
+}
+.container-fluid {
+  padding: 0;
+}
+/**************************************************************Header****************************************************************************************/
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background: #1f1f1f;
+}
+
+.left {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.leftCh1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link1 {
+  font-family: AvenirLTStd-Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  color: #e5e5e5;
+  text-decoration: none;
+  margin-left: 10px;
+}
+ .btnFormAdapt,.btnForm{
+  background-color: #1f1f1f;
+  color: #e5e5e5;
+  border: none;
+ 
+}
+.btnFormAdapt{
+  display: none;
+  z-index: 6;
+  width: 60px;
+}
+/* .btnForm{
+  background-color: #1f1f1f;
+  color: #e5e5e5;
+  border: none;
+} */
+.btnForm:hover {
+  color: #bb933e;
+}
+
+.inputSearch {
+    width: 100%;
+  background-color: #1f1f1f;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+  margin-left: 4px;
+}
+.inputSearch:focus {
+  color: #bb933e;
+}
+ .btn.btn-search{
+     padding-left: 12px;
+     padding-right: 12px;
+ }
+.logo {
+  font-family: "Atomic Age", cursive;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 62px;
+  letter-spacing: -0.04em;
+  color: #e5e5e5;
+}
+
+.logoAdapt {
+  display: none;
+  font-family: "Atomic Age", cursive;
+  margin-left: 10px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 46px;
+  line-height: 62px;
+  letter-spacing: -0.04em;
+  color: #e5e5e5;
+}
+
+.center {
+  display: flex;
+  align-items: flex-end;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+}
+
+.registration {
+  font-family: AvenirLTStd-Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.04em;
+  margin-right: 10px;
+  margin-top: 10px;
+  color: #e5e5e5;
+}
+
+.cartSmall {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  background: #bb933e;
+  transition: 1s;
+}
+.cartSmall:hover {
+  background: #d84c0b;
+  transition: 1s;
+}
+body > header > div.right > a > div.cartSmall > div:nth-child(1) {
+  margin-top: 9px;
+  text-align: center;
+  font-family: AvenirLTStd-Roman;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  color: #1f1f1f;
+}
+body > header > div.right > a > div.cartSmall > div:nth-child(2) {
+  margin-top: 7px;
+  text-align: center;
+  font-family: AvenirLTStd-Roman;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 87px;
+
+  color: #dddddd;
+}
+body > header > div.right > a {
+  text-decoration: none;
+}
+
+.nab-bg {
+  background-color: #1f1f1f;
+}
+
+.nav-link {
+  font-family: AvenirLTStd-Roman;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.04em;
+  color: #e5e5e5;
+}
+
+/**************************************************************Slider****************************************************************************************/
+#carouselExampleControls {
+  background: #000000;
+}
+.carousel-item {
+  /* margin-left: 55%;*/
+  width: 100%;
+}
+.carousel-text{
+   position: absolute;  
+   left: 20%;
+   top: 25%;
+}
+.carousel-item h4 {
+  font-family: "AvenirLTStd-Roman";
+  font-size: 48px;
+  line-height: 66px;
+  color: #e5e5e5;
+}
+
+#span1 {
+  color: #bb933e;
+}
+
+.sliderAdapt {
+  display: none;
+}
+
+
+/*************section1******************************************************/
+.header-3 {
+  text-align: center;
+  font-family: "AvenirLTStd-Roman", sans-serif;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+select {
+  padding: 0 50px 0 5px;
+  border: none;
+  border-bottom: 1px solid #1f1f1f;
+  outline: none;
+  font-family: "AvenirLTStd-Roman", sans-serif;
+  font-size: 18px;
+  color: #1f1f1f;
+  width: 100%;
+}
+#selectors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+.btn-primary {
+  transition: 1s;
+  background: #bb933e;
+  border-radius: 3px;
+  border: 1px solid #bb933e;
+  font-family: "AvenirLTStd-Roman", sans-serif;
+  font-size: 15px;
+  color: #e5e5e5;
+  padding: 0.375rem 1.75rem;
+}
+
+.btn-center {
+  display: table;
+  margin: auto;
+}
+.btn-primary:hover {
+  background: #d84c0b;
+  color: #aace69;
+  font-weight: 900;
+  transition: 1s;
+  border: 1px solid #bb933e;
+}
+/********************************************section2*********************************************/
+.gallery {
+  margin-top: 40px;
+}
+
+.product {
+  text-align: center;
+  position: relative;
+}
+
+.phoneGallery {
+  padding: 20px;
+  background: linear-gradient(
+    149.37deg,
+    rgba(196, 196, 196, 0.76) 0%,
+    rgba(229, 229, 229, 0.51) 98.55%
+  );
+}
+.textGlr {
+  font-family: "AvenirLTStd-Roman";
+  font-size: 22px;
+  margin-top: 10px;
+}
+.textGlr2 {
+  font-family: "SF Pro Display";
+  font-size: 30px;
+  letter-spacing: -0.06em;
+  color: #000000;
+}
+/****************************************************************information**********************************************************************/
+.information {
+  background: #1f1f1f;
+}
+.infHeader {
+  font-family: "AvenirLTStd-Roman";
+  font-weight: 900;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #dddddd;
+}
+.infHeader::after {
+  content: "";
+  width: 160px;
+  border-bottom: 3px solid #bb933e;
+  display: block;
+  margin: auto;
+}
+.infText {
+  margin-top: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+  height: 100%;
+  font-family: AvenirLTStd-Roman;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+  color: #888888;
+}
+
+/**************************************paragraph2&menu********************************/
+#paragraph2 {
+  justify-content: center;
+  font-family: AvenirLTStd-Roman;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 49px;
+  margin-top: 20px;
+  letter-spacing: -0.03em;
+}
+.colNavTxt {
+  font-family: "AvenirLTStd-Roman";
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #bb933e;
+}
+#twoNav {
+  margin: auto;
+}
+/*********************************************slider2******************************************/
+.main {
+  width: 100%;
+  height: 500px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.imgBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  width: 1120px;
+  height: 500px;
+
+  overflow: hidden;
+}
+.chevronLeft {
+  font-family: "Font Awesome 5 Free";
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 100px;
+  transition: 1.5s;
+}
+.chevronRight {
+  font-family: "Font Awesome 5 Free";
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 100px;
+}
+.chevronLeft:hover, .chevronRight:hover{
+  color:#bb933e;
+  transition: 1.5s;
+}
+img {
+  margin: 0 8px;
+}
+.bg-dark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.big {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+.close-modal {
+  text-align: center;
+  background: #212529;
+  color: #aace69;
+  margin-bottom: 15px;
+}
+
+/*****************************************footer***************************/
+footer {
+  background: #1f1f1f;
+}
+
+.footerText {
+  color: #dddddd;
+}
+.logo2 {
+  font-family: "Atomic Age", cursive;
+  font-size: 46px;
+  letter-spacing: -0.04em;
+  color: #e5e5e5;
+}
+.footInf {
+  font-family: "AvenirLTStd-Roman";
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+
+  color: #dddddd;
+}
+.footInf::after {
+  width: 70px;
+  content: "";
+  border-bottom: 3px solid #bb933e;
+  display: block;
+  color: #d84c0b;
+}
+.menu li a {
+  text-decoration: none;
+  color: #dddddd;
+}
+.menu li {
+  list-style: none;
+  margin-top: 10px;
+}
+ul.menu {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.subscribe-description{
+  margin-top: 10px;
+  font-family: "AvenirLTStd-Roman";
+  font-style: italic;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.03em;
+  text-transform: lowercase;
+  color: #888888;
+}
+
+#mobileFooter {
+  display: none;
+}
+
+@media (max-width: 1600px) {
+  h4 {
+    font-size: 28px;
+    line-height: 30px;
+    top: 15%;
+  }
+}
+
+@media (max-width: 1350px) {
+  #deskFooter {
+    display: none;
+  }
+
+  .infText {
+    width: 100%;
+  }
+  #mobileFooter {
+    display: flex;
+    flex-direction: column;
+  }
+  #mobileFooter > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 1000px) {
+  h4 {
+    font-size: 28px;
+    line-height: 30px;
+    top: 5%;
+    left: 33.5%;
+  }
+  .carousel-inner a {
+    padding-top: 1.75%;
+    left: 38%;
+    top: 75%;
+  }
+
+  .row-none {
+    display: none;
+  }
+  .sliderAdapt {
+    display: contents;
+    
+  }
+  .sliderAdapt a{
+    position: absolute;
+  /*   width:100%; */
+    background-color: #bb933e;
+    color: #dddddd;
+    padding: 10px;
+    text-decoration: none;
+    left: 42%;
+    top:85%;
+   
+  }
+
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .navbar-toggler {
+    background-color: #1f1f1f;
+    color:#dddddd ;
+    z-index: 3;
+    margin-left: 15px;
+  }
+
+
+
+  .logoAdapt {
+    display: inline;
+    margin-left: 10%;
+  }
+  .center {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body > header > div.center > div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+  }
+  .btnFormAdapt {
+    display: inline;
+    font-size: 50px;
+    font-family: "Font Awesome 5 Free";
+  }
+}
+
+@media (max-width: 768px) {
+  #selectors {
+    flex-direction: column;
+    align-items: center;
+  }
+  #selectors div {
+    margin-top: 20px;
+    width: 200px;
+  }
+  h4 {
+    font-size: 18px;
+    line-height: 30px;
+    top: 5%;
+    left: 33.5%;
+  }
+  .carousel-inner a {
+    position: absolute;
+    width: 130px;
+    text-align: center;
+    padding-top: 0.3%;
+    left: 35%;
+    top: 85%;
+    font-size: 15px;
+  }
+}
+
+
+
+#navbarNavAltMarkup{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #1f1f1f;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .header-3 {
+    font-size: 36px;
+    margin-bottom: 45px;
+  }
+
+  #selectors > div + div {
+    margin-left: 30px;
+  }
+  #navbarNavAltMarkup{
+    position: static;
+    padding: 0;
+  }
+}
+
+.btnFormAdapt path{
+  fill: #fff
+}
+.product a{
+  text-decoration: none;
+  color: #000000;
+  transition: 1s;
+}
+.product a:hover{
+color: #bb933e;
+transition: 1s;
+
+}
